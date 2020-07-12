@@ -1,7 +1,7 @@
 /* Column Divider */
 *{box-sizing: border-box;}
-.column {float: left; margin-left: 5px;}
-.left {width: 35%;margin-left: 5px;background-color:rgb(80,200,120);}
-.middle {width: 55%;margin-left: 5px;background-color: rgb(158,224,180);}
-.right {width: 10%;margin-left: 5px;background-color: rgb(247,253,249);}
-.row:after {content:"";display:table;clear:both;}
+.column {float: left; padding: 5px; }
+.left {width: 35%;background-color:rgb(80,200,120);}
+.middle {width: 55%;background-color: rgb(158,224,180);}
+.right {width: 10%;background-color: rgb(219, 253, 230);}
+.row:after {content: "";display: table;clear: both;}
