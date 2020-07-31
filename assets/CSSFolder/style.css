@@ -15,28 +15,7 @@ body{
 
 }
 
-h2,h3{
-    color: orange;
-}
 
-h3 {
-    text-decoration: underline;
-}
-
-p{
-    color: rgb(70, 62, 62);
-}
-
-.part{
-    border-radius: 10px;
-    padding: 40px;
-    margin-top: 25px;
-    box-shadow: 0 0 5px 5px rgba(237,209,124,1);
-}
-
-header{
-    display: inline;
-}
 
 .middle {
     text-align: center;
@@ -46,15 +25,32 @@ header{
     padding-left: 2em;
 }
 /* TOP PART */
+header{
+    position: sticky;
+    overflow: auto;
+    display: flex;
+}
 
+.flex-column{
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.flex-row {
+    flex-direction: row;
+    flex-grow: 1;
+}
 
 .master {
-    font-size: 30px;
-    padding: 50px;
+    font-size: 20px;
+    padding: 1px;
+    margin: 0;
     color: white;
-    text-align: center;
-    background-color: rgb(255, 111, 97);
+    text-align: left;
+    background-color: #9bc400;
+    
 }
+
 
 nav li {
     display: inline;
@@ -64,7 +60,7 @@ nav li {
 }
 
 nav a {
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 400;
     color: aliceblue;
     text-decoration: none;
@@ -72,14 +68,13 @@ nav a {
 
 nav a:hover{
     font-weight: bold;
-    background-color: rgb(156, 72, 55);
+    background-color: #9bc400;
     transition: 0.5s;
 }
 
 nav{
-    position: sticky;
     top: 0;
-    background-color: rgb(225, 93, 68);
+    background-color:#3d7c47;
     padding: 2px;
     text-align: center;
 
@@ -87,16 +82,11 @@ nav{
 
 li a {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 60px;
 }
 
-.tagline{
-    color: whitesmoke;
-}
 
-.batasnav{
-    color: white;
-}
+
 
 /* MAIN PART */
 .container{
@@ -105,55 +95,17 @@ li a {
     overflow: auto;
     
 }
-figcaption{
-    font-size: 0.5em;
-}
 
 .content {
-    flex-grow: 2;
-
-}
-
-aside{
     flex-grow: 1;
-    padding-left: 20px;
+
 }
 
-.fotoprofile{
-    max-width: 200px;
-    text-align: center;
-    object-fit: cover;
-}
-
-.content-image{
-    width: 100%;
-    max-height: 300px;
-    object-position: center;
-    object-fit: cover;
-}
-
-section ul {
-    list-style-type: square;
-}
-
-.thismap {
-    width: 100%;
-    height: 400px;
-}
-
-#bordermap{
-    padding: 5px;
-    background-color: rgba(237,209,124,1);
-    box-shadow: 0 0 5px 5px rgba(237,209,124,1);
+.part{
     border-radius: 10px;
-}
-
-#specialaside{
-    margin-top: 0;
-}
-
-.CPku th {
-    text-align: left;
+    padding: 40px;
+    margin-top: 25px;
+    box-shadow: 0 0 5px 5px rgba(237,209,124,1);
 }
 /* FOOTER PART */
 footer{
@@ -163,6 +115,7 @@ footer{
     color: white;
     background-color: rgb(255, 111, 97);
 }
+
 
 /* MEDIA PART */
 @media screen and (max-width: 450px){
