@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
 
-*{
+*, *:before, *:after{
     box-sizing: border-box;
 }
 
@@ -24,33 +24,67 @@ body{
 .tab{
     padding-left: 2em;
 }
+
+.grid{
+    display: grid;
+    grid-auto-rows: 100px;
+}
+
+#section-a{
+    grid-area: a;
+}
+
+#section-b{
+    grid-area: b;
+}
+
+#section-c{
+    grid-area: c;
+}
+
+#section-d{
+    grid-area: d;
+}
+
+#section-e{
+    grid-area: e;
+}
+
+#section-f{
+    grid-area: f;
+}
+
+img{
+    max-height: 100%;
+}
+
+.logo_utama{
+    text-align: center;
+}
 /* TOP PART */
 header{
     position: sticky;
     overflow: auto;
-    display: flex;
-}
-
-.flex-column{
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.flex-row {
-    flex-direction: row;
-    flex-grow: 1;
 }
 
 .master {
-    font-size: 20px;
     padding: 1px;
     margin: 0;
-    color: white;
-    text-align: left;
-    background-color: #9bc400;
+    /* color: white; */
+    text-align: justify;
+    /* background-color: #9bc400; */
+    font-size: 30px;
+    height: 100%;
     
 }
 
+.Indexpath{
+    grid-template-columns:  repeat(8,1fr);   
+    grid-template-areas: 
+    "a a b b d d d d"
+    "a a c c d d d d"
+    "e e e e f f f f";
+}
 
 nav li {
     display: inline;
