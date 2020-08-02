@@ -1,0 +1,16 @@
+/* TOP PART */
+
+.logo_utama{
+    text-align: center;
+}
+
+/* MAIN PART */
+.IndexTanipath{
+    grid-template-columns:  repeat(8,1fr);   
+    grid-template-areas: 
+    "a a b d d d d d"
+    "a a c d d d d d"
+    "e e e e f f f f";
+}
+
+/* FOOTER PART */
