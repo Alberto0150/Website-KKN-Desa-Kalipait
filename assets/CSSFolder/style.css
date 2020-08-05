@@ -71,7 +71,7 @@ p{
 }
 /* TOP PART */
 header{
-    position: fixed;
+    position: sticky;
     overflow: auto;
     background-color: #68d388;
     color: #f5f5f5;
@@ -159,7 +159,6 @@ main{
 }
 .container{
     padding: 25px;
-    overflow: auto;
 }
 
 .namadesa{
