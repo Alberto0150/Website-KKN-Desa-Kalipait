@@ -91,6 +91,8 @@ header{
 }
 .topnavbar{
     flex-basis: 85%;
+    text-align: right;
+
 }
 
 nav li {
@@ -109,13 +111,12 @@ nav a {
 
 nav a:hover{
     font-weight: bold;
-    background-color: #9bc400;
-    transition: 0.5s;
+    box-shadow: 10px 9px 9px 3px rgba(0,0,0,0.68);
+    transition: 0.3s;
 }
 
 nav{
     top: 0;
-    /* background-color:#3d7c47; */
     padding: 10px;
     text-align: center;
     width: 100%;
@@ -207,11 +208,19 @@ footer{
  footer #section-c{
     margin: auto;
  }
+
+footer #section-a{
+    text-align: right;
+}
+
+footer #section-b{
+    text-align: left;
+}
 footer p{
     padding: 30px;
 }
 /* MEDIA PART */
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1024px){
     
     header{
         height: 15%;
@@ -257,6 +266,15 @@ footer p{
         ". a a . . b b ."
         "c c . d d . e e";
         grid-auto-rows: auto;
+    }
+    .topnavbar{
+        padding: 0;
+    }
+
+    nav li{
+        display: inline-block;
+        overflow: auto;
+        white-space: nowrap
     }
 }
 
