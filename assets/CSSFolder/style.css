@@ -79,16 +79,19 @@ header{
     width: 100%;
 }
 
-.master {
-    padding: 1px;
-    margin: 0;
-    /* color: white; */
-    text-align: justify;
-    font-size: 45px;
-    height: 100%;
-    
+.navcontainer{
+    padding: 10px;
+    display: flex;
+    flex-grow: 1;
 }
 
+.NavLogo{
+    flex-basis: 15%;
+    text-align: center;
+}
+.topnavbar{
+    flex-basis: 85%;
+}
 
 nav li {
     display: inline;
@@ -153,7 +156,7 @@ ul{
 main{
     background-color: #c2edda;
     margin: 0 auto;
-    height: 90%;
+    /* height: 90%; */
     overflow: auto;
     
 }
