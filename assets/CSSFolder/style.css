@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 
-*, *:before, *:after{
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -76,55 +78,56 @@ header{
     background-color: #68d388;
     color: #f5f5f5;
     width: 100%;
-}
-
-.navcontainer{
     padding: 10px;
+}
+
+nav{
     display: flex;
+    justify-content: space-around;
+    background-color: #68d388;
+    align-items: center;
+    min-height: 8vh;
 }
 
-.NavLogo{
-    flex-basis: 15%;
-    text-align: center;
-    flex-grow: 1;
-}
 .NavLogo img{
-    width: 100px;
-}
-
-.topnavbar{
-    flex-basis: 85%;
-    text-align: right;
-    flex-grow: 1;
-
-}
-
-nav li {
-    display: inline;
-    margin: 20px;
-    list-style-type: none;
+    height: 60px;
     
 }
 
-nav a {
-    font-size: 15px;
-    font-weight: 400;
-    color: rgb(56, 54, 54);
-    text-decoration: none;
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
 }
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: rgb(56, 54, 54);
+
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3 ease;
+}
+
 
 nav a:hover{
     font-weight: bold;
     box-shadow: 10px 9px 9px 3px rgba(0,0,0,0.68);
     transition: 0.3s;
-}
-
-nav{
-    top: 0;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-
 }
 
 li a {
@@ -260,6 +263,35 @@ footer p{
 
 @media screen and (max-width:480px)
 {
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-links{
+        
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #68d388;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
     .buttoncustom{
         padding: 20px;
     }
@@ -275,14 +307,15 @@ footer p{
         "c c . d d . e e";
         grid-auto-rows: auto;
     }
-    .topnavbar{
-        padding: 0;
-    }
 
     nav li{
         display: inline-block;
         overflow: auto;
         white-space: nowrap
+    }
+
+    nav ul{
+        margin-top: 30px;
     }
     .namadesa{
         font-size: 25px;
@@ -292,3 +325,27 @@ footer p{
     }
 }
 
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform:  translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
