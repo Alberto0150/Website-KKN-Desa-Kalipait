@@ -75,7 +75,6 @@ header{
     overflow: auto;
     background-color: #68d388;
     color: #f5f5f5;
-    /* height: 10%; */
     width: 100%;
 }
 
@@ -89,6 +88,10 @@ header{
     text-align: center;
     flex-grow: 1;
 }
+.NavLogo img{
+    width: 100px;
+}
+
 .topnavbar{
     flex-basis: 85%;
     text-align: right;
@@ -258,7 +261,6 @@ footer p{
 @media screen and (max-width:480px)
 {
     .buttoncustom{
-        font-size: 0.65em;
         padding: 20px;
     }
 
@@ -282,7 +284,10 @@ footer p{
         overflow: auto;
         white-space: nowrap
     }
-    main{
+    .namadesa{
+        font-size: 25px;
+    }
+    header{
         font-size: smaller;
     }
 }
