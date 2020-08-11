@@ -97,7 +97,7 @@ nav{
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 80%;
 }
 
 .nav-links li{
@@ -327,6 +327,10 @@ footer p{
 
 .nav-active{
     transform: translateX(0%);
+}
+
+.nav-gone{
+    display: none;
 }
 
 @keyframes navLinkFade{
