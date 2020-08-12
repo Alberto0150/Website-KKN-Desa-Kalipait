@@ -4,6 +4,8 @@
 .production{
     padding: 0;
     display: flex;
+    overflow: auto;
+    height: auto;
     
 }
 
@@ -11,13 +13,14 @@
     display: block;
     flex-basis: 30%;
     text-decoration: none;
+    background-color: transparent;
+    height: 100%;
+    overflow:  hidden;
 }
-
 
 .product-nav{
-    flex-grow: 1;
+    margin: 0;
 }
-
 .product-nav a{
     color: rgb(56, 54, 54);
     text-decoration: none;
@@ -33,6 +36,7 @@
 
 .item-list{
     width: 70%;
+    height: auto;
 }
 .restricted::after{
     clear: both;
@@ -68,9 +72,7 @@
 
     .product-nav li{
         display: block;
-    }
-    
-    .product-nav li{
         padding: 20px 10px;
     }
+    
 }
