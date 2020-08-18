@@ -18,17 +18,26 @@ body{
      padding: 0;
      font-family: "Roboto","Poppins",sans-serif;
      height: 100%;
+     
 }
 
 h1{
-    font-size: 72px;
+    font-size: 56px;
     color:rgb(56, 54, 54);
+    
 }
 
 h2{
     font-size: 56px;
-    color:rgb(56, 54, 54);
+    color:rgb(255,255,255);
+    text-shadow: 2px 2px 10px rgba(56, 54, 54,0.7);
 }
+
+h3{
+    font-size: 32px;
+}
+
+.left{text-align:left;}
 
 .middle {
     text-align: center;
@@ -72,14 +81,17 @@ img{
 
 p{
     margin: 0 ;
+    opacity: 1;
 }
 
 .part{
     border-radius: 10px;
     padding: 40px;
     margin-top: 25px;
-    box-shadow: 0 0 5px 5px rgba(237,209,124,1);
+    background-color: rgba(0255,255,255,0.4);
+    box-shadow: 0px 0px 5px 5px rgba(255,255,255,1);
 }
+
 /* TOP PART */
 header{
     top: 0;
@@ -89,6 +101,15 @@ header{
     background-image: linear-gradient(0deg, transparent 0%, transparent 58%,rgba(104, 104, 104,0.05) 58%, rgba(104, 104, 104,0.05) 92%,transparent 92%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 34%,rgba(104, 104, 104,0.05) 34%, rgba(104, 104, 104,0.05) 77%,transparent 77%, transparent 100%),linear-gradient(0deg, transparent 0%, transparent 33%,rgba(104, 104, 104,0.05) 33%, rgba(104, 104, 104,0.05) 53%,transparent 53%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
     width: 100%;
     padding: 30px;
+}
+
+.Logoname{
+    display: flex;
+    flex-direction: column;
+}
+
+.thename{
+    flex-grow: 1;
 }
 
 nav{
@@ -136,6 +157,7 @@ nav{
 
 nav a:hover{
     font-weight: bold;
+    background-color: #81da9b;
     box-shadow: 10px 9px 9px 3px rgba(0,0,0,0.68);
     transition: 0.3s;
 }
@@ -157,7 +179,7 @@ ul{
     padding: 10px;
     /* width: 50%;
     text-align: center; */
-    background-color: #008037;
+    background-color: rgba(104,211,136,1);
     border-radius: 50px;
     overflow: visible;
     color: rgb(56, 54, 54);
@@ -171,6 +193,7 @@ ul{
 }
 
 .buttoncustom:hover{
+    background-color: #81da9b;
     box-shadow: 10px 9px 9px 3px rgba(0,0,0,0.68);
     
 }
@@ -178,20 +201,18 @@ ul{
 /* MAIN PART */
 main{
     padding-top: 50px;
-    background-image: url(../Images/backgroundIndex.png);
+    background-image: url(../Images/bodybackground.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
     margin: 0 auto;
-    /* min-height: 70%; */
     overflow: auto;
     
 }
 
 section{
-    padding: 10px;
-    margin: 20px 0px;
-    background-image: linear-gradient(16deg, rgba(116, 116, 116,0.02) 0%, rgba(116, 116, 116,0.02) 25%,transparent 25%, transparent 96%,rgba(177, 177, 177,0.02) 96%, rgba(177, 177, 177,0.02) 100%),linear-gradient(236deg, rgba(148, 148, 148,0.02) 0%, rgba(148, 148, 148,0.02) 53%,transparent 53%, transparent 59%,rgba(56, 56, 56,0.02) 59%, rgba(56, 56, 56,0.02) 100%),linear-gradient(284deg, rgba(16, 16, 16,0.02) 0%, rgba(16, 16, 16,0.02) 46%,transparent 46%, transparent 71%,rgba(181, 181, 181,0.02) 71%, rgba(181, 181, 181,0.02) 100%),linear-gradient(316deg, rgba(197, 197, 197,0.02) 0%, rgba(197, 197, 197,0.02) 26%,transparent 26%, transparent 49%,rgba(58, 58, 58,0.02) 49%, rgba(58, 58, 58,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    padding: 30px;
+    margin: 5%;
 }
 
 section p{
@@ -199,6 +220,10 @@ section p{
     font-size: medium;
 }
 
+.selamat-datang{
+    padding:3%;
+    background-image: linear-gradient(16deg, rgba(116, 116, 116,0.02) 0%, rgba(116, 116, 116,0.02) 25%,transparent 25%, transparent 96%,rgba(177, 177, 177,0.02) 96%, rgba(177, 177, 177,0.02) 100%),linear-gradient(236deg, rgba(148, 148, 148,0.02) 0%, rgba(148, 148, 148,0.02) 53%,transparent 53%, transparent 59%,rgba(56, 56, 56,0.02) 59%, rgba(56, 56, 56,0.02) 100%),linear-gradient(284deg, rgba(16, 16, 16,0.02) 0%, rgba(16, 16, 16,0.02) 46%,transparent 46%, transparent 71%,rgba(181, 181, 181,0.02) 71%, rgba(181, 181, 181,0.02) 100%),linear-gradient(316deg, rgba(197, 197, 197,0.02) 0%, rgba(197, 197, 197,0.02) 26%,transparent 26%, transparent 49%,rgba(58, 58, 58,0.02) 49%, rgba(58, 58, 58,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+}
 h2{
     text-align: left;
     padding-left: 10%;
@@ -209,7 +234,7 @@ h2{
 }
 
 .namadesa{
-    padding: 100px 0px 50px 0px;
+    padding: 0px 0px 50px 0px;
     text-align: center;
     font-size: 50px;
 }
@@ -225,7 +250,37 @@ h2{
     "a b";
 }
 
+.floating img{
+    max-width: 70%;
+}
 
+section table{
+    justify-self: right;
+    font-size: 24px;
+}
+
+.table-image{
+    max-height: 50px;
+    width: 48px;
+}
+
+table a{
+    color:rgb(56, 54, 54);
+}
+
+.customtable{
+    width: auto;    
+}
+
+.customtable p{
+    font-size: 28px;
+    border-spacing: 5px;
+    padding:5px;
+}
+
+td a{
+    text-decoration: none;
+}
 /* FOOTER PART */
 footer{
     padding: 25px;
@@ -267,7 +322,12 @@ footer #section-b{
     text-align: left;
 }
 footer p{
-    padding: 30px;
+    padding: 10px;
+    color: rgb(56, 54, 54);
+}
+
+footer .dikembangkan{
+    font-size: 2em;
 }
 /* MEDIA PART */
 @media screen and (max-width: 1024px){
@@ -277,6 +337,9 @@ footer p{
     
     h2{
         font-size: 32px;
+    }
+    h3{
+        font-size: 24px;
     }
     header{
         padding: 5px;
@@ -292,8 +355,8 @@ footer p{
         
         position: fixed;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 90vh;
+        top: 10vh;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -317,6 +380,9 @@ footer p{
         
     }
 
+    .customtable p{
+        font-size: 20px;
+    }
     .namadesa{
         padding:20px 0px;
     }
@@ -338,6 +404,13 @@ footer p{
     .buttoncustom{
         font-size: 32px;
     }
+    footer .dikembangkan{
+        font-size: 1.5em;
+    }
+
+    section table{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:480px)
@@ -354,6 +427,9 @@ footer p{
     }
     h2{
         font-size: 24px;
+    }
+    h3{
+        font-size: 18px;
     }
     .buttoncustom{
         padding: 20px;
@@ -392,6 +468,22 @@ footer p{
     .product-nav li{
         display: block;
         padding: 20px 10px;
+    }
+
+    footer .dikembangkan{
+        font-size: 1em;
+    }
+
+    .table-image{
+        max-height: 50px;
+        width: 32px;
+    }
+
+    .customtable p{
+        font-size: 18px;
+    }
+    section table{
+        font-size: 18px;
     }
 }
 
